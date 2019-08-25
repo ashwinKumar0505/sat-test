@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="chat.css">
+  <title>Document</title>
+</head>
+<body>
+  <div class="outer">
+  <div class="container" id="container">
+     <div class="container-1">
+       <div class="container-1-left">
+      <p class="circle"></p>
+      <h2>MARK ZUCKERBERG</h2>
+      </div>
+      <div>
+        <h2 class="close" onclick="closeThis()">&times;</h2>
+      </div>
+     </div>
+     <div class="container-2">
+     <div class="line-1">
+      <hr>
+      <h3>TODAY</h3>
+      <hr>
+    </div>
+    <div class="chat-page" id="chat-page">
+      <div class="chat1-left">
+        <p class="time">10:53</p>
+        <div class="chat1-left-message">
+          <p>Hi,Mark! I made a new design for Messenger App.</p>
+        </div>
+       </div>
+        <div class="chat1-right">
+        <p class="time">10:57</p>
+        <div class="chat1-right-message">
+          <p>Yo!...Send it to my Assistant and we'll review it during the year.</p>
+        </div>
+       </div>
+        <div class="chat1-left">
+        <p class="time">11.00</p>
+        <div class="chat1-left-message">
+          <p>But Mark.</p>
+        </div>
+       </div>
+        <div class="chat1-right">
+        <p class="time">11.10</p>
+        <div class="chat1-right-message">
+          <p>Yes tell me.</p>
+        </div>
+       </div>
+    </div>
+   
+    </div>
+   
+     <div class="container-3">
+          <hr class="last-line">
+    <div class="send-message">
+     
+     <input type="text" class="send-message-text-field" id="text-field" placeholder="ENTER YOUR MESSAGE" onkeypress="checkForEnter(event)">
+      <input type="button" class="send-message-button" value="SEND" onclick="send()">
+    </div>
+     </div>
+     </div>
+   <img src="chat.png" width=100px height=100px class="mark" id="mark" onclick="show()">
+
+  </div>
+<script src="./chat.js"></script>
+</body>
+</html>
